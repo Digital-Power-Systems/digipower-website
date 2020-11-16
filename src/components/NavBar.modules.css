@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+nav {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.navbar-logo{
+    padding-left: 1rem;
+    background-color: rgb(255, 255, 255);
+}
+.navbar-logo:hover{
+    background-color: #fff176;
+}
+.navbar-items ul{ 
+    margin: 0%;
+    padding: 0%;
+   display: flex;
+    
+}
+.navbar-items li {
+    list-style: none;
+}
+.navbar-items li a{
+    font-size: 2em;
+    text-decoration: none;
+    color: rgb(33, 36, 36);
+    padding: 2rem;
+    display: block;
+}
+.navbar-items li a:hover{
+background-color: #4482DF;
+color: cornsilk ;
+}
