@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Button() {
+export default function ProductCard() {
     return (
         <div>
-            <button> </button>
+            <img src= "" />
         </div>
     )
 }

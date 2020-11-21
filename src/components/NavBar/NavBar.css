@@ -3,9 +3,12 @@
 }
 nav {
     background-color: rgb(255, 255, 255);
+    width: 100%;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     text-align: center;
+    
 }
 .navbar-logo{
     padding-left: 1rem;

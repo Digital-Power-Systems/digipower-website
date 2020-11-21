@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
 import { Link} from 'react-router-dom';
-import DigiPowerLogo from  '../logo.svg'
-import styles from './NavBar.modules.css'
+import DigiPowerLogo from  '../../logo.svg'
+import  './NavBar.css'
 export default function NavBar() {
     return (
       <>
-        <nav className={styles.navbar}>
+        <nav className="navbar">
            
                 <div className="navbar-logo">
                   <Link to="/"><img src={DigiPowerLogo} /></Link>
@@ -15,6 +15,7 @@ export default function NavBar() {
                   <li><Link to="/services">Products</Link></li>
                   <li><Link to="/about">About</Link></li>
                   <li> <Link to="/contact">Contact us</Link></li>
+                  
                 </ul>
                </div>
           
