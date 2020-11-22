@@ -2,6 +2,8 @@
 footer{
     display: grid;
     grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+     justify-content: center;
     color: rgb(0, 0, 0);
     width: 100%;
     left: 0px;

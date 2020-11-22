@@ -7,8 +7,8 @@ export default function NavBar() {
       <>
         <nav className="navbar">
            
-                <div className="navbar-logo">
-                  <Link to="/"><img src={DigiPowerLogo} /></Link>
+                <div >
+                  <Link to="/"><img className="navbar-logo" src={DigiPowerLogo} /></Link>
                 </div>
                <div className="navbar-items">
                 <ul>

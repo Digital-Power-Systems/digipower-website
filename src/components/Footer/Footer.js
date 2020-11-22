@@ -34,7 +34,7 @@ export default function Footer() {
                        </div>
                        <div>
                         <img className="contact-icons" src={phone} alt="phone" />
-                        <strong>+91 - 9605555685 </strong>
+                        <strong>+ 91-960 555 5685 (IN)</strong>
                     </div>
                 </div>
                 <div>
@@ -43,9 +43,11 @@ export default function Footer() {
                     <span><img className="social-media-icons" src={insta} alt="instagram" /></span>
                    
                 </div>
-              
+               <div>
+               © Copyright 2020, Digital Power Solutions, All Rights Reserved
+               </div>
             </footer>
-            © Copyright 2020, Digital Power Solutions, All Rights Reserved
+           
             </>
     )
 }

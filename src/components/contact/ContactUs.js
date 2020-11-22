@@ -12,13 +12,13 @@ export default function ContactUs() {
            <div className="contact-image"> 
                 <div className="contact-text">
                     <h1>Get in touch with us....</h1>
-                    <span><h2>Hey, We would love to hear from you !<br /> Shoot us a mail or reach us at +91 - 9605555685 for any queries.</h2></span>
+                    <span><h2>Hey, we would love to hear from you !<br /> Shoot us a mail or reach us at +91 - 9605555685 for any queries.</h2></span>
                 </div> 
             </div>
            
                 <div className="contact-text-mobile">
                     <h1>Get in touch with us....</h1>
-                    <span><h2>Hey, We would love to hear from you !<br /> Shoot us a mail or reach us at +91 - 9605555685 for any queries.</h2></span>
+                    <span><h2>Hey, We would love to hear from you !<br /> Shoot us a mail <br /> Reach us at +91 - 9605555685 for any queries.</h2></span>
                     <img className="contact-image-mobile" src={contact} />
                 </div> 
             
@@ -32,7 +32,8 @@ export default function ContactUs() {
                     <h5>Contact Number (Optional)</h5>
                     <input type="number" placeholder="Contact Number (Optional)" />
                     <h5>Queries or remarks</h5>
-                    <textarea class="comment"  placeholder="Ask away"  ></textarea><br />
+                    <textarea class="comment"  placeholder="Ask away"  ></textarea>
+                    <hr />
                     <input type="submit" />
                </form>
             </div>
