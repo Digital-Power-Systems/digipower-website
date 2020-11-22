@@ -1,9 +1,35 @@
 
 footer{
-    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
     width: 100%;
-    left: 0;
-    bottom: 0;
-    background-color: rgb(161, 174, 235);
+    left: 0px;
+    bottom: 0px;
+    background-color: rgb(219, 223, 243);
     padding: 2%;
+}
+ul{
+    list-style: none;
+}
+.social-media-icons{
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+}
+.location-column{
+    display: flex;
+    font-size: 1.5rem;
+}
+.location{
+    width: 12rem;
+    height: 12rem;
+}
+.location-address{
+    text-align: justify;
+    text-justify: inter-word;
+}
+@media only screen and (max-width: 600px){
+    
 }
