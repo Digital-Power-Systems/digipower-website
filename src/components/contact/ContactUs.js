@@ -9,13 +9,20 @@ export default function ContactUs() {
     return (
         <div className="contact">
            
-           <span className="contact-image"> 
-                <span className="contact-text">
+           <div className="contact-image"> 
+                <div className="contact-text">
                     <h1>Get in touch with us....</h1>
                     <span><h2>Hey, We would love to hear from you !<br /> Shoot us a mail or reach us at +91 - 9605555685 for any queries.</h2></span>
-                </span> 
-            </span>
-            <span className="contact-form">
+                </div> 
+            </div>
+           
+                <div className="contact-text-mobile">
+                    <h1>Get in touch with us....</h1>
+                    <span><h2>Hey, We would love to hear from you !<br /> Shoot us a mail or reach us at +91 - 9605555685 for any queries.</h2></span>
+                    <img className="contact-image-mobile" src={contact} />
+                </div> 
+            
+            <div className="contact-form">
                <form  onSubmit={console.log("Submitted!!")}>
                     
                     <h5>Your name</h5>
@@ -28,7 +35,7 @@ export default function ContactUs() {
                     <textarea class="comment"  placeholder="Ask away"  ></textarea><br />
                     <input type="submit" />
                </form>
-            </span>
+            </div>
              
         </div>
     )
