@@ -1,35 +1,95 @@
 
 footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     color: rgb(0, 0, 0);
     width: 100%;
     left: 0px;
     bottom: 0px;
     background-color: rgb(219, 223, 243);
     padding: 2%;
+    font-size: 1rem;
 }
 ul{
     list-style: none;
 }
 .social-media-icons{
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     margin: 1rem;
+}
+.contact-icons{
+    width: 2.5rem;
+    height: 2.5rem;
+    
 }
 .location-column{
     display: flex;
-    font-size: 1.5rem;
+    flex-direction: row;
+    padding: 2rem;
 }
-.location{
-    width: 12rem;
-    height: 12rem;
+
+.location-map{
+    width: 10rem;
+    height: 10rem;
 }
 .location-address{
     text-align: justify;
     text-justify: inter-word;
 }
-@media only screen and (max-width: 600px){
+.contact-column{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+   
+
+}
+@media screen and (max-width: 1000px){
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+       
+    }
+    .logo{
+        width: 10rem;
+        height: 10rem;
+    }
+    .location-map{
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    footer{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        font-size: 0.9rem;
+        padding: 2rem;
+       
+    }
+    .location-column{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        
+    }
     
+    .location-address{
+        width: 100%;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    .social-media-icons{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 1rem;
+    }
+    .contact-icons{
+        width: 1.5rem;
+        height: 1.5rem;
+        
+    }
+  
 }
