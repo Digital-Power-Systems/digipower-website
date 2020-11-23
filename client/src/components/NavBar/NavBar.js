@@ -6,13 +6,14 @@ import  './NavBar.css'
 
 
 export default function NavBar() {
-  const [width, setWidth] = useState(() => window.innerWidth)
-  const [isMobile, setisMobile] = useState(() => false);
+
+  const [width, setWidth] = useState(() => window.innerWidth)  //to get width of screen, which adds -mobile to className and css is rendered.
+  
   const [isToggle, setisToggle] = useState(() => false);  
 
   useEffect(() => {
     const handleWidth = () => setWidth(window.innerWidth)
-    window.addEventListener("resize", handleWidth)
+    window.addEventListener("resize", handleWidth)  // adding an event listner to check for screen resizing
     console.log("Current window size is",window.innerWidth," px")
     return _ => {
       window.removeEventListener('resize',console.log("Removing the event listner"))}

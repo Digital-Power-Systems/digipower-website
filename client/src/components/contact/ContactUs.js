@@ -31,7 +31,7 @@ export default function ContactUs() {
                     <h5>Contact Number (Optional)</h5>
                     <input type="number" placeholder="Contact Number (Optional)" />
                     <h5>Queries or remarks</h5>
-                    <textarea class="comment"  placeholder="Ask away"  ></textarea>
+                    <textarea class="comment"  placeholder="Message"  ></textarea>
                     <hr />
                     <input type="submit" />
                </form>
