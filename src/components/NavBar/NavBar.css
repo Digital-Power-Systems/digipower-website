@@ -134,11 +134,12 @@ color: cornsilk ;
      }
      ul{
         padding-left: 0%;
+        background-color: white;
      }
      .navbar-items-mobile-active{
-        margin-top: 15%;
+        margin-top: 2%;
         background-color: white;
-       z-index: 40;
+       
         width: 100%;
        display: flex;
        flex-direction: column;
@@ -155,8 +156,9 @@ color: cornsilk ;
         display: block;
     }
     .navbar-items-mobile-active li a:hover{
-    background-color: #4482DF;
-    color: cornsilk ;
+      font-size: 1rem;
+      color: #4482DF;
+    
     }
      
 }
