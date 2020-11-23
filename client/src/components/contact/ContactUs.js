@@ -18,12 +18,12 @@ export default function ContactUs() {
                 <div className="contact-text-mobile">
                     <h1 className="contact-dialogue">Get in touch with us....</h1>
                     <span><h2>Hey, We would love to hear from you !<br /> Shoot us a mail <br /> Reach us at +91 - 9605555685 for any queries.</h2></span>
-                    <img className="contact-image-mobile" src={contact} />
+                    <img className="contact-image-mobile" src={contact} alt="contact us"/>
                 </div> 
             
             <div className="contact-form">
                <form  onSubmit={console.log("Submitted!!")}>
-                    
+                    <h4> Send us a mail</h4>
                     <h5>Your name</h5>
                     <input type="text" placeholder="Name" required/>
                     <h5>Your E-Mail</h5>
