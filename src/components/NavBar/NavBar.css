@@ -82,10 +82,10 @@ color: cornsilk ;
     }
 }
 /* This is the break point to switch to hamberger menu */
-@media screen and (max-width: 525px){  
+@media screen and (max-width: 545px){  
     .navbar-mobile {
         z-index: 10;
-        height: 5%;
+        height: 8%;
         width: 100%;
         position: fixed;
         display: flex;
@@ -93,14 +93,22 @@ color: cornsilk ;
         
         
     }
- 
+    .navbar-logo-cotainer{
+     overflow: visible;
+      position:relative;
+     
+    }
     .navbar-logo{
         position: absolute;
         left: 0;
         padding: .1rem;
         background-color: transparent;
         margin-left: 2em;
-        width: 20%;
+        max-width: 100%;
+    height: auto;
+    width: auto\9;
+       width: 20%;
+       
     }
     
     .navbar-mobile-menu {

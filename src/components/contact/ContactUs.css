@@ -3,7 +3,7 @@
  *{
     font-family: 'PT Sans', sans-serif;
  }  
- h1{
+.contact-dialogue{
      color: black
  }
  .contact{
@@ -56,6 +56,9 @@ input{
         flex-direction:column;
         width: 100%;
     }  
+    .contact-dialogue{
+        color: black
+    }
     .contact-image{
        display: none
     }
@@ -93,6 +96,9 @@ input{
         flex-direction:column;
         width: 100%;
     }  
+    .contact-dialogue{
+        color: black
+    }
     .contact-text-mobile{
         display: block;
         color: rgb(139, 139, 139);

@@ -1,7 +1,6 @@
 import React from 'react'
 import contact from '../../assets/SVGs/contact_us.svg';
-import mail from '../../assets/SVGs/email.svg'
-import phone from '../../assets/SVGs/phone.svg'
+
 
 import './ContactUs.css';
 
@@ -11,13 +10,13 @@ export default function ContactUs() {
            
            <div className="contact-image"> 
                 <div className="contact-text">
-                    <h1>Get in touch with us....</h1>
-                    <span><h2>Hey, we would love to hear from you !<br /> Shoot us a mail or reach us at +91 - 9605555685 for any queries.</h2></span>
+                    <h1 className="contact-dialogue">Get in touch with us....</h1>
+                    <span><h2 >Hey, we would love to hear from you !<br /> Shoot us a mail or reach us at +91 - 9605555685 for any queries.</h2></span>
                 </div> 
             </div>
            
                 <div className="contact-text-mobile">
-                    <h1>Get in touch with us....</h1>
+                    <h1 className="contact-dialogue">Get in touch with us....</h1>
                     <span><h2>Hey, We would love to hear from you !<br /> Shoot us a mail <br /> Reach us at +91 - 9605555685 for any queries.</h2></span>
                     <img className="contact-image-mobile" src={contact} />
                 </div> 

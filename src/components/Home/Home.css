@@ -13,7 +13,9 @@
     background-size: cover;
     position: relative;
   }
-  
+  h1{
+    color: white; 
+  }
   /* Place text in the middle of the image */
   .hero-text {
     font-family: 'Playfair Display', serif;

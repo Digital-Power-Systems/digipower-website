@@ -22,12 +22,12 @@ export default function NavBar() {
   return (
       <>
      
-        <nav className={`navbar${width<525?"-mobile":""}`}>
+        <nav className={`navbar${width<545?"-mobile":""}`}>
            
                 <div className="navbar-logo-container">
                   <Link to="/"><img src={DigiPowerLogo}  className="navbar-logo" /></Link>
                 </div>
-               <div className={`navbar-items${width<525?"-mobile":""}${width<525&&isToggle?"-active":""}`}>
+               <div className={`navbar-items${width<545?"-mobile":""}${width<545&&isToggle?"-active":""}`}>
                 <ul>
                   <li><Link to="/services">Products</Link></li>
                   <li><Link to="/about">About</Link></li>

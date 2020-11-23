@@ -67,8 +67,8 @@ ul{
     footer{
         display: grid;
         grid-template-columns: repeat(1, auto);
-        font-size: 0.9rem;
-        padding: 2rem;
+        font-size: 0.7rem;
+        padding: 1rem;
        
     }
     .location-column{
