@@ -35,7 +35,7 @@ export default function ContactUs() {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("A value was submitted",e.target[0].value);
+        console.log("A value was submitted", e.target[0].value);
     }
     return (
         <div className="contact">
