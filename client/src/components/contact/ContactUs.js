@@ -35,7 +35,21 @@ export default function ContactUs() {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("A value was submitted", e.target[0].value);
+        fetch("http://localhost:3001/", {
+            method: "POST", 
+            headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            name: userDetails.name,
+            email: userDetails.email,
+            contact: userDetails.contact,
+            message: userDetails.message
+          })})
+        .then(res => {console.log("BOOM!!", res);})
+        
+    
     }
     return (
         <div className="contact">
