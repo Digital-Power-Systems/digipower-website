@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8dd0efd6.chunk.css",
+    "main.js": "/static/js/main.b8963cdb.chunk.js",
+    "main.js.map": "/static/js/main.b8963cdb.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2e4fe941.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2e4fe941.js.map",
+    "static/js/2.168f0a3b.chunk.js": "/static/js/2.168f0a3b.chunk.js",
+    "static/js/2.168f0a3b.chunk.js.map": "/static/js/2.168f0a3b.chunk.js.map",
+    "static/js/3.e596ba13.chunk.js": "/static/js/3.e596ba13.chunk.js",
+    "static/js/3.e596ba13.chunk.js.map": "/static/js/3.e596ba13.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.8dd0efd6.chunk.css.map": "/static/css/main.8dd0efd6.chunk.css.map",
+    "static/js/2.168f0a3b.chunk.js.LICENSE.txt": "/static/js/2.168f0a3b.chunk.js.LICENSE.txt",
+    "static/media/Home.css": "/static/media/volt_meter.88371aa9.jpg",
+    "static/media/amaron-banner.69ee49c9.png": "/static/media/amaron-banner.69ee49c9.png",
+    "static/media/battery.c8687378.svg": "/static/media/battery.c8687378.svg",
+    "static/media/cctv.aae85a74.svg": "/static/media/cctv.aae85a74.svg",
+    "static/media/ContactUs.css": "/static/media/contact_us.4b2d3700.svg",
+    "static/media/email.507e95b6.svg": "/static/media/email.507e95b6.svg",
+    "static/media/exide-banner.5d894511.jpg": "/static/media/exide-banner.5d894511.jpg",
+    "static/media/facebook.71296914.svg": "/static/media/facebook.71296914.svg",
+    "static/media/instagram.02967a62.svg": "/static/media/instagram.02967a62.svg",
+    "static/media/livfast-banner.1abb5e45.png": "/static/media/livfast-banner.1abb5e45.png",
+    "static/media/livguard-banner.67172a92.jpg": "/static/media/livguard-banner.67172a92.jpg",
+    "static/media/location.4031f124.svg": "/static/media/location.4031f124.svg",
+    "static/media/logo.2d53fb1c.svg": "/static/media/logo.2d53fb1c.svg",
+    "static/media/phone.2ae70d6c.svg": "/static/media/phone.2ae70d6c.svg",
+    "static/media/sayok-banner.6f58eaf0.jpg": "/static/media/sayok-banner.6f58eaf0.jpg",
+    "static/media/solar-energy.1c9e8276.svg": "/static/media/solar-energy.1c9e8276.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2e4fe941.js",
+    "static/js/2.168f0a3b.chunk.js",
+    "static/css/main.8dd0efd6.chunk.css",
+    "static/js/main.b8963cdb.chunk.js"
+  ]
+}
