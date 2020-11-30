@@ -49,6 +49,7 @@ export default function Footer() {
                 </div>
              
                <div className="copyright">
+                        <hr />
                © Copyright 2020, Digital Power Solutions, All Rights Reserved
                </div>
             </footer>

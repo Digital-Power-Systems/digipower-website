@@ -36,13 +36,13 @@ export default function About() {
                     <hr />
                     <h1>Our partners</h1>
                 <div className="partner-list">
-                    <div><img src={exideLogo}  className="partner-logo" /></div>  
-                    <div><img src={amaronLogo}  className="partner-logo" /></div>
-                    <div><img src={livfastLogo}  className="partner-logo" /></div>
-                    <div><img src={livguardLogo}  className="partner-logo" /></div>
-                    <div><img src={sayokLogo}  className="partner-logo" /></div>
-                    <div><img src={wareeLogo}  className="partner-logo" /></div>
-                    <div><img src={rrLogo}  className="partner-logo" /></div>
+                    <div><img src={exideLogo}  className="partner-logo" alt="exidelogo"/></div>  
+                    <div><img src={amaronLogo}  className="partner-logo" alt="amaronlogo"/></div>
+                    <div><img src={livfastLogo}  className="partner-logo" alt="livfastlogo"/></div>
+                    <div><img src={livguardLogo}  className="partner-logo" alt="livguardlogo"/></div>
+                    <div><img src={sayokLogo}  className="partner-logo" alt="sayoklogo"/></div>
+                    <div><img src={wareeLogo}  className="partner-logo" alt="wareelogo"/></div>
+                    <div><img src={rrLogo}  className="partner-logo" alt="rrlogo"/></div>
                 </div>
                 <hr />
                 <h1>Our branches</h1>
@@ -51,7 +51,7 @@ export default function About() {
                    
                     <div className="branch-address">
                         <span >
-                            <strong>Corporate Office: </strong><br />
+                            <strong>Corporate Office</strong><hr />
                             Digital Power Systems<br />
                             2nd Floor, United Complex<br />
                             Behind Nandilath G Mart<br />
@@ -63,7 +63,7 @@ export default function About() {
                     </div>  
                     <div className="branch-address">
                         <span >
-                            <strong>Branch 1 : </strong><br />
+                            <strong>Branch 1</strong><hr />
                             Digital Power Systems<br />
                             NP/07260<br />
                             Parannur Post<br />
@@ -75,7 +75,7 @@ export default function About() {
                     </div>  
                     <div className="branch-address">
                         <span >
-                            <strong>Branch 2 </strong><br />
+                            <strong>Branch 2</strong><hr />
                             Power Tech Energy Solutions<br />
                             2nd Floor, United Complex<br />
                             Behind Nandilath G Mart<br />
@@ -87,7 +87,7 @@ export default function About() {
                     </div> 
                     <div className="branch-address">
                         <span >
-                            <strong>Branch 3 </strong><br />
+                            <strong>Branch 3</strong><hr />
                             Invex Power Systems<br />
                             Cheekkilod, <br />
                             Kozhikode<br/>
@@ -97,7 +97,7 @@ export default function About() {
                     </div> 
                     <div className="branch-address">
                         <span >
-                            <strong>Branch 4 </strong><br />
+                            <strong>Branch 4</strong><hr />
                             To add @ Kasargod<br />
                             Kasargod<br/>
                             Kerala, India <br />
