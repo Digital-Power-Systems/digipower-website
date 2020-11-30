@@ -1,11 +1,12 @@
 .product-card-container{
-    background-color: rgb(190, 198, 235);
+    background-color: rgb(118, 170, 248);
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 2rem;
     text-align: center;
     padding: 2rem;
+    border: 0.2rem solid black;
 }
 .product-image{
     width: 4rem;

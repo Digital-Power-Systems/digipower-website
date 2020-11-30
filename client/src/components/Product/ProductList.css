@@ -1,5 +1,24 @@
 .product-list-container{
-    padding-top: 10%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    padding-top: 1%;
+   
+}
+
+@media screen and (max-width: 1250px){
+    .product-list-container{
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media screen and (max-width: 800px){
+    .product-list-container{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (max-width: 500px){
+    .product-list-container{
+        grid-template-columns: repeat(1, auto);
+    }
 }
