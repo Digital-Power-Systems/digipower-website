@@ -1,8 +1,8 @@
 
 footer{
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
     justify-content: center;
     color: rgb(0, 0, 0);
     width: 100%;
@@ -11,6 +11,10 @@ footer{
     background-color: rgb(219, 223, 243);
     padding: 2%;
     font-size: 0.9rem;
+}
+.logo{
+    width: 10rem;
+    height: 10rem;
 }
 ul{
     list-style: none;
@@ -29,19 +33,19 @@ ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 2rem;
+    padding: 1rem;
    
 }
 
 .location-map{
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
 }
 .location-address{
-    background-color: rgb(255, 255, 255);
+
     border-radius: 1rem;
-    margin-right: 1rem;
-    text-align: justify;
+    
+    text-align: center;
     text-justify: inter-word;
     padding: 1rem;
 }
@@ -52,12 +56,23 @@ ul{
    
 
 }
-@media screen and (max-width: 1225px){
-    /* footer{
+.copyright{
+    grid-column: 2 / 4;
+    margin: auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 1010px){
+    footer{
         display: grid;
         grid-template-columns: repeat(2, auto);
        
-    } */
+    }
+    .copyright{
+        grid-column: 1 / 2;
+        margin: auto;
+        text-align: center;
+    }
     .logo{
         width: 10rem;
         height: 10rem;
