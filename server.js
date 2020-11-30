@@ -6,13 +6,7 @@ const PORT = process.env.PORT || 8080;
 
 
 
-// app.use(express.static(path.join(__dirname, 'client', 'build')));
 
-
-// app.get('*', (req, res) => {
-//   console.log("This isn't prod, but we'll see ",path.resolve(__dirname, 'client', 'build', 'index.html'));
-//   res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-// });
 
 
 
@@ -38,6 +32,15 @@ if (process.env.NODE_ENV === 'production') {
       console.log("Boom!!, Wer'e in production",path.resolve(__dirname, 'client', 'build', 'index.html'));
         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
       });
+}
+else{
+  app.use(express.static(path.join(__dirname, 'client', 'build')));
+
+
+  app.get('*', (req, res) => {
+    console.log("This isn't prod, but we'll see ",path.resolve(__dirname, 'client', 'build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
 }
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`)
