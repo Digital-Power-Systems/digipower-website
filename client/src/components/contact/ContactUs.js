@@ -55,7 +55,7 @@ export default function ContactUs() {
             
             <div className="contact-form">
                <form  onSubmit={handleSubmit}>
-                    <h4> Send us a mail</h4>
+                    <h2> Send us a mail</h2>
                     <h5>Your name</h5>
                     <input type="text" placeholder="Name" value={userDetails.name} onChange={(e) => handleChange(e, "name")}required/>
                     <h5>Your E-Mail</h5>
