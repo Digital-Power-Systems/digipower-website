@@ -6,13 +6,13 @@ const PORT = process.env.PORT || 8080;
 
 
 
-app.use(express.static(path.join(__dirname, 'client', 'build')));
+// app.use(express.static(path.join(__dirname, 'client', 'build')));
 
 
-app.get('*', (req, res) => {
-  console.log("This isn't prod, but we'll see ",path.resolve(__dirname, 'client', 'build', 'index.html'));
-  res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-});
+// app.get('*', (req, res) => {
+//   console.log("This isn't prod, but we'll see ",path.resolve(__dirname, 'client', 'build', 'index.html'));
+//   res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+// });
 
 
 
