@@ -30,9 +30,9 @@ export default function NavBar() {
                 </div>
                <div className={`navbar-items${width<545?"-mobile":""}${width<545&&isToggle?"-active":""}`}>
                 <ul>
-                  <li><Link to="/services">Products</Link></li>
-                  <li><Link to="/about">About</Link></li>
-                  <li> <Link to="/contact">Contact us</Link></li>
+                  <li onClick={() => setisToggle((prevStateisToggle => !prevStateisToggle  ))}><Link to="/services">Products</Link></li>
+                  <li onClick={() => setisToggle((prevStateisToggle => !prevStateisToggle  ))}><Link to="/about">About</Link></li>
+                  <li onClick={() => setisToggle((prevStateisToggle => !prevStateisToggle  ))}> <Link to="/contact">Contact us</Link></li>
                   
                 </ul>
                </div>
