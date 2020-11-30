@@ -1,16 +1,16 @@
 
 footer{
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(2, auto);
-     justify-content: center;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
     color: rgb(0, 0, 0);
     width: 100%;
     left: 0px;
     bottom: 0px;
     background-color: rgb(219, 223, 243);
     padding: 2%;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 ul{
     list-style: none;
@@ -28,7 +28,9 @@ ul{
 .location-column{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 2rem;
+   
 }
 
 .location-map{
@@ -36,8 +38,12 @@ ul{
     height: 10rem;
 }
 .location-address{
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    margin-right: 1rem;
     text-align: justify;
     text-justify: inter-word;
+    padding: 1rem;
 }
 .contact-column{
     padding: 2rem;
@@ -46,12 +52,12 @@ ul{
    
 
 }
-@media screen and (max-width: 1000px){
-    footer{
+@media screen and (max-width: 1225px){
+    /* footer{
         display: grid;
         grid-template-columns: repeat(2, auto);
        
-    }
+    } */
     .logo{
         width: 10rem;
         height: 10rem;
@@ -60,6 +66,7 @@ ul{
         width: 8rem;
         height: 8rem;
     }
+
 }
 
 
