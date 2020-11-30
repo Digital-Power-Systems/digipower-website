@@ -9,8 +9,8 @@ const PORT = process.env.PORT || 8080;
 app.use(express.static(path.join(__dirname, 'build')));
 
 
-app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
 });
 
 
@@ -34,6 +34,10 @@ if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
 
     app.get('*', (req, res) => {
+<<<<<<< HEAD
+=======
+      console.log(path.resolve(__dirname, 'client', 'build', 'index.html'));
+>>>>>>> f28cf30e5fd9662f9200a8d14526954ae6bdeb7f
         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
       });
 }
