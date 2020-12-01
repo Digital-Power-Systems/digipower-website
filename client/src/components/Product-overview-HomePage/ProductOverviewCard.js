@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './ProductCard.css'
+import './ProductOverviewCard.css'
 
 export default function ProductCard(props) {
     return (

@@ -8,7 +8,7 @@ import Footer from './components/Footer/Footer';
 
 import ContactUs from './components/contact/ContactUs';
 import Home from './components/Home/Home';
-import ProductList from './components/Product/ProductList';
+import ProductList from './components/Product-overview-HomePage/ProductOverviewList';
 
 
 function App() {

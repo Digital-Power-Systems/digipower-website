@@ -8,7 +8,10 @@ import livfastLogo from '../../assets/SVGs/batteries_logo/livfast.svg';
 import sayokLogo from '../../assets/SVGs/batteries_logo/sayok-1.jpg';
 import rrLogo from '../../assets/SVGs/batteries_logo/rrmicro.jpg';
 import wareeLogo from '../../assets/SVGs/batteries_logo/waree.jpeg';
-import livguardLogo from '../../assets/SVGs/batteries_logo/livguard.svg'
+import livguardLogo from '../../assets/SVGs/batteries_logo/livguard.svg';
+import altronLogo from '../../assets/SVGs/batteries_logo/altron.png';
+import microLogo from '../../assets/SVGs/batteries_logo/micro.jpg';
+import UTL from '../../assets/SVGs/batteries_logo/UTL.png';
 
 // import exideBanner from '../../assets/Battery/exide-banner.jpg';
 // import amaronBanner from '../../assets/Battery/amaron-banner.png';
@@ -36,17 +39,19 @@ export default function About() {
                     <hr />
                     <h1>Our partners</h1>
                 <div className="partner-list">
-                    <div><img src={exideLogo}  className="partner-logo" alt="exidelogo"/></div>  
-                    <div><img src={amaronLogo}  className="partner-logo" alt="amaronlogo"/></div>
                     <div><img src={livfastLogo}  className="partner-logo" alt="livfastlogo"/></div>
+                    <div><img src={microLogo}  className="partner-logo" alt="amaronlogo"/></div>
+                    <div><img src={UTL}  className="partner-logo" alt="rrlogo"/></div>
+                    <div><img src={wareeLogo}  className="partner-logo" alt="wareelogo"/></div>
                     <div><img src={livguardLogo}  className="partner-logo" alt="livguardlogo"/></div>
                     <div><img src={sayokLogo}  className="partner-logo" alt="sayoklogo"/></div>
-                    <div><img src={wareeLogo}  className="partner-logo" alt="wareelogo"/></div>
-                    <div><img src={rrLogo}  className="partner-logo" alt="rrlogo"/></div>
+                    <div><img src={altronLogo}  className="partner-logo" alt="amaronlogo"/></div>
+                    <div><img src={exideLogo}  className="partner-logo" alt="exidelogo"/></div>  
+                    <div><img src={amaronLogo}  className="partner-logo" alt="amaronlogo"/></div>
                 </div>
                 <hr />
-                <h1>Our branches</h1>
                
+                <h1>Our Branches</h1>
                 <div className="branch-list">
                    
                     <div className="branch-address">
@@ -95,14 +100,14 @@ export default function About() {
                             Kerala, India <br />
                         </span> 
                     </div> 
-                    <div className="branch-address">
+                    {/* <div className="branch-address">
                         <span >
                             <strong>Branch 4</strong><hr />
                             To add @ Kasargod<br />
                             Kasargod<br/>
                             Kerala, India <br />
                         </span> 
-                    </div> 
+                    </div>  */}
                 </div>
             </div>
        </>
