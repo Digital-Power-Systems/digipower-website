@@ -5,9 +5,19 @@ import ProductMenu from './ProductsMenu/ProductMenu';
 
 import {BrowserRouter as Router , Route, Switch} from 'react-router-dom';
 
-import './ProductsContainer.css'
+import './ProductsContainer.css';
+
+
 
 export default class ProductsContainer extends Component {
+   constructor(props){
+       super(props);
+       this.state={selected: ""};
+       this.setSelected = this.setSelected.bind(this);
+   }
+   setSelected(choice){
+        
+   }
     componentDidMount(){
         console.log(this.props.location);
     }

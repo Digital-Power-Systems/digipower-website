@@ -13,7 +13,7 @@ export default function ProductMenu() {
     return (
         <div className="product-menu-container">
             <Link to="/services?selected=inverter">
-                <div className="product-image-container"><img className="product-image" src={inverter} alt="inverter-icon" />Inverters</div>
+                <div className="product-image-outer-cirlce"><div className="product-image-container"><img className="product-image" src={inverter} alt="inverter-icon" /></div>Inverters</div>
             </Link>
             <Link to="/services?selected=ups">
                 <div className="product-image-container"><img className="product-image" src={ups} alt="ups-icon" />Online/Offline UPS</div>
