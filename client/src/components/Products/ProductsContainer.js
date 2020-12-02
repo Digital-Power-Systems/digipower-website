@@ -1,19 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react'
 
-import ProductMenu from './ProductMenu';
-import ProductCard from './ProductCard';
+import ProductList from './ProductList';
+import ProductMenu from './ProductsMenu/ProductMenu';
 
 import {BrowserRouter as Router , Route, Switch} from 'react-router-dom';
 
-export default function ProductsContainer() {
-    return (
-        <div>
-            <Router>
+import './ProductsContainer.css'
+
+export default class ProductsContainer extends Component {
+    componentDidMount(){
+        console.log(this.props.location);
+    }
+    render() {
+        return (
+            <div className="product-container">
+               
+                <h1>Our Products</h1>
                 <ProductMenu />
-                <Switch>
-                    <Route path="/" ></Route>
-                </Switch>
-            </Router>
-        </div>
-    )
+                <ProductList location={this.props.location} />
+                
+             
+            </div>
+        )
+    }
 }
