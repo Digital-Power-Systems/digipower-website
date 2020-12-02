@@ -1,0 +1,21 @@
+.product-menu-container{
+    margin: auto;
+    width: 60%;
+    padding: 2rem;
+    background-color: rgb(135, 155, 222);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.product-image-container{
+    padding: 1rem;
+    width: 6rem;
+    height: 6rem;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+}
+.product-image{
+    width: 5rem;
+    margin: auto;
+}

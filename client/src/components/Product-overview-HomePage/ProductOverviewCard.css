@@ -1,4 +1,4 @@
-.product-card-container{
+.product-overview-card-container{
     background-color: rgb(118, 170, 248);
     display: flex;
     flex-direction: column;
@@ -8,11 +8,11 @@
     padding: 2rem;
     border: 0.2rem solid black;
 }
-.product-image{
+.product-overview-image{
     width: 4rem;
     
 }
-.product-description{
+.product-overview-description{
     text-align: justify;
     text-justify: auto;
 }

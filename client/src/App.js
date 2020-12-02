@@ -8,7 +8,8 @@ import Footer from './components/Footer/Footer';
 
 import ContactUs from './components/contact/ContactUs';
 import Home from './components/Home/Home';
-import ProductList from './components/Product-overview-HomePage/ProductOverviewList';
+import ProductOverviewList from './components/Product-overview-HomePage/ProductOverviewList';
+import ProductsContainer from './components/Products/ProductsContainer';
 
 
 function App() {
@@ -22,11 +23,11 @@ function App() {
          <Switch>
             <Route path="/" exact>
             <Home />
-            <ProductList />
+            <ProductOverviewList />
             </Route>
-            <Route path="/services">
-              <ProductList />
-            </Route>
+            <Route path="/services" component={ProductsContainer}/>
+              
+            
             <Route path="/about">
                <About />
             </Route>

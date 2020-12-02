@@ -1,13 +1,16 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom';
+
 import './ProductOverviewCard.css'
 
-export default function ProductCard(props) {
+export default function ProductOverviewCard(props) {
     return (
-        <div className="product-card-container">
-            <div><img className="product-image" src= {props.img} alt="product-card"/></div>
-            <h3  className="product-header">{props.header}</h3>
-            <div  className="product-description">{props.description}</div>
+        <div className="product-overview-card-container">
+            <div><img className="product-overview-image" src= {props.img} alt="product-card"/></div>
+            <h3  className="product-overview-header">{props.header}</h3>
+            <div  className="product-overview-description">{props.description}</div>
+           <button><Link to={props.URL}>Know more...</Link> </button>
         </div>
     )
 }
