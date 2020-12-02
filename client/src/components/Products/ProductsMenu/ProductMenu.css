@@ -7,15 +7,26 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
+.product-image-outer-cirlce{
+    border: .4rem solid black;
+    padding: .2rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
 .product-image-container{
-    padding: 1rem;
+   
+    margin: auto;
+    overflow: hidden;
+    padding-top: .6rem;
     width: 6rem;
     height: 6rem;
     background-color: white;
     border-radius: 50%;
     text-align: center;
+    border: .2rem solid black;
 }
 .product-image{
-    width: 5rem;
+    width: 4rem;
     margin: auto;
 }
