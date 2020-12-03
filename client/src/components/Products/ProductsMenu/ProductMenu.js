@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import cctv from '../../../assets/SVGs/cctv.svg';
 import solar from '../../../assets/SVGs/solar-energy.svg';
@@ -9,24 +9,16 @@ import ups from '../../../assets/SVGs/UPS-icon.png';
 import {Link} from 'react-router-dom';
 
 import './ProductMenu.css';
+import ProductMenuItem from './ProductMenuItem';
 export default function ProductMenu() {
     return (
         <div className="product-menu-container">
-            <Link to="/services?selected=inverter">
-                <div className="product-image-outer-cirlce"><div className="product-image-container"><img className="product-image" src={inverter} alt="inverter-icon" /></div>Inverters</div>
-            </Link>
-            <Link to="/services?selected=ups">
-                <div className="product-image-container"><img className="product-image" src={ups} alt="ups-icon" />Online/Offline UPS</div>
-            </Link>
-            <Link to="/services?selected=solar">
-                <div className="product-image-container"><img className="product-image" src={solar} alt="solar-icon" />Solar products</div>
-            </Link>
-            <Link to="/services?selected=battery">
-                <div className="product-image-container"><img className="product-image" src={battery} alt="battery-icon" />Batteries</div>
-            </Link>
-            <Link to="/services?selected=cctv">
-                <div className="product-image-container"><img className="product-image" src={cctv} alt="cctv-icon" />Security Cameras</div>
-            </Link>
+            
+               <ProductMenuItem description="Inverter" URL="/services?selected=inverter" img={inverter} selected={true}/>
+               <ProductMenuItem description="Online/Offline UPS" URL="/services?selected=ups" img={ups} selected={true}/>
+               <ProductMenuItem description="Solar products" URL="/services?selected=solar" img={solar} selected={true}/>
+               <ProductMenuItem description="Batteries" URL="/services?selected=battery" img={battery} selected={true}/>
+               <ProductMenuItem description="Security Cameras" URL="/services?selected=cctv" img={cctv} selected={true}/>
         </div>
     )
 }
