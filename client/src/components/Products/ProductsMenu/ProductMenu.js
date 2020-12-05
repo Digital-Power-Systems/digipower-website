@@ -11,7 +11,7 @@ import {useParams} from 'react-router-dom';
 import './ProductMenu.css';
 import ProductMenuItem from './ProductMenuItem';
 export default function ProductMenu(props) {
-    const [selected, setSelected] =useState("?selected=inverter");
+  
  
     const menu = [{id: 1, description: "Inverter", URL: "?selected=inverter", img: inverter },
                     {id: 2, description: "Online/Offline UPS", URL: "?selected=ups", img: ups },
