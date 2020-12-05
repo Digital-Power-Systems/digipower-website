@@ -26,7 +26,7 @@ export default class ProductsContainer extends Component {
             <div className="product-container">
                
                 <h1>Our Products</h1>
-                <ProductMenu />
+                <ProductMenu location={this.props.location}/>
                 <ProductList location={this.props.location} />
                 
              

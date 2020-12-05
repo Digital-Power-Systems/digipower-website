@@ -10,7 +10,7 @@ export default function ProductOverviewCard(props) {
             <div><img className="product-overview-image" src= {props.img} alt="product-card"/></div>
             <h3  className="product-overview-header">{props.header}</h3>
             <div  className="product-overview-description">{props.description}</div>
-           <button><Link to={props.URL}>Know more...</Link> </button>
+           <Link to={props.URL}><button>Know more...</button></Link> 
         </div>
     )
 }

@@ -1,6 +1,6 @@
 .product-menu-container{
     margin: auto;
-    width: 60%;
+    width: 80%;
     padding: 2rem;
     background-color: #4482DF;
     border-radius: 3rem 3rem 0rem 0rem ;
@@ -17,7 +17,9 @@ a{
 .product-menu-item-container{
     display: flex;
     flex-direction: column;
+    margin: 0rem 4rem  0rem  4rem;
 }
+
 .product-image-outer-cirlce{
     border: .6rem solid  #4482DF;;
     padding: .2rem;
@@ -26,7 +28,8 @@ a{
     border-radius: 50%;
 }
 .product-image-outer-cirlce-selected{
-    border: .6rem solid rgb(172, 235, 167);
+    transition: width 2s;
+    border: .6rem solid rgb(252, 236, 96);
     padding: .2rem;
     width: 8rem;
     height: 8rem;
@@ -39,7 +42,19 @@ a{
     padding-top: .6rem;
     width: 6rem;
     height: 6rem;
-    background-color: rgb(174, 248, 169);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    text-align: center;
+    border: .2rem solid black;
+}
+.product-image-container-selected{
+   
+    margin: auto;
+    overflow: hidden;
+    padding-top: .6rem;
+    width: 6rem;
+    height: 6rem;
+    background-color:  rgb(252, 236, 96);
     border-radius: 50%;
     text-align: center;
     border: .2rem solid black;
