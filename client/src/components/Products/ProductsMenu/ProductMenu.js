@@ -23,7 +23,7 @@ export default function ProductMenu(props) {
     return (
         <div className="product-menu-container">
                 {menu.map((item) => {
-                    return <ProductMenuItem  description={item.description} URL={item.URL} img={item.img} selected={selected === item.URL} onClick={() => {setSelected(item.URL)}} />
+                    return <ProductMenuItem  description={item.description} URL={item.URL} img={item.img} selected={props.selected === item.URL} onClick={() => {props.setSelected(item.URL)}} />
                 })}
            
                
