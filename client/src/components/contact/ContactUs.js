@@ -38,7 +38,8 @@ export default function ContactUs() {
         e.preventDefault();
         axios({
             method: 'post',
-            url: 'http://localhost:8080/',
+            url: '/',
+           
             data: {
                 name: userDetails.name,
                 email: userDetails.email,
@@ -48,6 +49,7 @@ export default function ContactUs() {
         })
         .then( (res) => {
             alert(res.data);
+            console.log(res);
             // setUserDetails({name: "", email: "", mob: "", message: ""})
         })
         .catch( (err) => console.log("Encoutered the following error", err))
@@ -81,7 +83,7 @@ export default function ContactUs() {
                     <h5>Queries or remarks</h5>
                     <textarea className="comment"  placeholder="Message"  name="message" value={userDetails.message} onChange={(e) => handleChange(e, "message")}></textarea>
                     <hr />
-                    <button type="submit" name="submitbutton">Submit</button>
+                    <input type="submit" />
                </form>
             </div>
              

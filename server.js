@@ -26,6 +26,18 @@ if (process.env.NODE_ENV === 'production') {
       console.log("Boom!!, Wer'e in production",path.resolve(__dirname, 'client', 'build', 'index.html'));
         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
       });
+      app.post('/', (req, res)=>{ 
+        transporter.sendMail({
+          to: "manager@digipower.in",
+          from: 'manager@digipower.in',
+          subject: `Customer message from digipower.in, ${req.body.name} has sent a message `,
+          html: `<h2>${req.body.name} has sent a message from contact form in www.digipower.in</h2><br /><p style="font-size: 1.1rem"><strong>Name: </strong>  ${req.body.name}</p><p style="font-size: 1.1rem"><strong>Message: </strong>${req.body.message}</p><br /><h2> Contacts given: </h2><br /><p style="font-size: 1.1rem"><strong>Email address: </strong> ${req.body.email} </p><p style="font-size: 1.1rem"><strong>Mobile number:  </strong> ${req.body.mob == undefined?"not given":req.body.mob}<p>`
+        })
+        .then(res.send("Thank you for contacting us, We'll get back to you soon! :)"))
+        .catch((err) => console.log("Encountered Erroe", err)) ;
+       console.log(req.body.mob);
+       res.send("Boom, Cool")
+   });
 }
 else{
   app.use(cors());
@@ -47,7 +59,7 @@ else{
      .then(res.send("Thank you for contacting us, We'll get back to you soon! :)"))
      .catch((err) => console.log("Encountered Erroe", err)) ;
     console.log(req.body.mob);
-    res.send("Boom, Cool")
+   
 });
 }
 app.listen(PORT, () => {
