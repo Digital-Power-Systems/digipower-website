@@ -50,7 +50,7 @@ export default function ContactUs() {
         .then( (res) => {
             alert(res.data);
             console.log(res);
-            // setUserDetails({name: "", email: "", mob: "", message: ""})
+            setUserDetails({name: "", email: "", mob: "", message: ""})
         })
         .catch( (err) => console.log("Encoutered the following error", err))
      
