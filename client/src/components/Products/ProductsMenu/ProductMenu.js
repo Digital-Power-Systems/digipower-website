@@ -13,11 +13,12 @@ import ProductMenuItem from './ProductMenuItem';
 export default function ProductMenu(props) {
   
  
-    const menu = [{id: 1, description: "Power inverters", URL: "?selected=inverter", img: inverter },
-                    {id: 2, description: "Online/Offline UPS", URL: "?selected=ups", img: ups },
-                    {id: 3,  description: "Solar products", URL: "?selected=solar", img: solar },
-                    {id: 4, description: "Tubular Batteries \n", URL: "?selected=battery", img: battery },
-                    {id: 5, description: "Security Cameras", URL: "?selected=cctv", img: cctv }
+    const menu = [{id: 1, description: "Inverters", URL: "?selected=inverter", img: inverter },
+                    {id: 2, description: "Online UPS", URL: "?selected=onlineups", img: ups },
+                    {id: 3, description: "Home UPS", URL: "?selected=ups", img: ups },
+                    {id: 4,  description: "Solar", URL: "?selected=solar", img: solar },
+                    {id: 5, description: "Batteries \n", URL: "?selected=battery", img: battery },
+                    {id: 6, description: "CCTV ", URL: "?selected=cctv", img: cctv }
                 ];
              
     return (
