@@ -48,7 +48,7 @@ export default function ContactUs() {
         })
         .then( (res) => {
             alert(res.data);
-            setUserDetails({name: "", email: "", mob: "", message: ""})
+            // setUserDetails({name: "", email: "", mob: "", message: ""})
         })
         .catch( (err) => console.log("Encoutered the following error", err))
      
@@ -73,15 +73,15 @@ export default function ContactUs() {
                <form  onSubmit={handleSubmit}>
                     <h2> Send us a mail</h2>
                     <h5>Your name</h5>
-                    <input type="text" placeholder="Name" value={userDetails.name} onChange={(e) => handleChange(e, "name")}required/>
+                    <input type="text" placeholder="Name" name="name" value={userDetails.name} onChange={(e) => handleChange(e, "name")}required/>
                     <h5>Your E-Mail</h5>
-                    <input type="email" placeholder="Email" value={userDetails.email} onChange={(e) => handleChange(e, "email")} required/>
+                    <input type="email" placeholder="Email" name="email" value={userDetails.email} onChange={(e) => handleChange(e, "email")} required/>
                     <h5>Contact Number (Optional)</h5>
-                    <input type="number" placeholder="Contact Number (Optional)" value={userDetails.mob} onChange={(e) => handleChange(e, "mob")}/>
+                    <input type="number" placeholder="Contact Number (Optional)" name="mobile" value={userDetails.mob} onChange={(e) => handleChange(e, "mob")}/>
                     <h5>Queries or remarks</h5>
-                    <textarea className="comment"  placeholder="Message"  value={userDetails.message} onChange={(e) => handleChange(e, "message")}></textarea>
+                    <textarea className="comment"  placeholder="Message"  name="message" value={userDetails.message} onChange={(e) => handleChange(e, "message")}></textarea>
                     <hr />
-                    <button type="submit">Submit</button>
+                    <button type="submit" name="submitbutton">Submit</button>
                </form>
             </div>
              
