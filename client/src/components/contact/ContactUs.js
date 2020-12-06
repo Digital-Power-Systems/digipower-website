@@ -42,11 +42,14 @@ export default function ContactUs() {
             data: {
                 name: userDetails.name,
                 email: userDetails.email,
-                contact: userDetails.mob,
+                mob: userDetails.mob,
                 message: userDetails.message
             }
         })
-        .then( (res) => console.log(res))
+        .then( (res) => {
+            alert(res.data);
+            setUserDetails({name: "", email: "", mob: "", message: ""})
+        })
         .catch( (err) => console.log("Encoutered the following error", err))
      
     }
