@@ -13,17 +13,17 @@ import ProductMenuItem from './ProductMenuItem';
 export default function ProductMenu(props) {
   
  
-    const menu = [{id: 1, description: "Inverter", URL: "?selected=inverter", img: inverter },
+    const menu = [{id: 1, description: "Power inverters", URL: "?selected=inverter", img: inverter },
                     {id: 2, description: "Online/Offline UPS", URL: "?selected=ups", img: ups },
                     {id: 3,  description: "Solar products", URL: "?selected=solar", img: solar },
-                    {id: 4, description: "Batteries", URL: "?selected=battery", img: battery },
+                    {id: 4, description: "Tubular Batteries \n", URL: "?selected=battery", img: battery },
                     {id: 5, description: "Security Cameras", URL: "?selected=cctv", img: cctv }
                 ];
              
     return (
         <div className="product-menu-container">
                 {menu.map((item) => {
-                    return <ProductMenuItem  description={item.description} URL={item.URL} img={item.img} selected={props.selected === item.URL} onClick={() => {props.setSelected(item.URL)}} />
+                    return <><ProductMenuItem  key={item.id} description={item.description} URL={item.URL} img={item.img} selected={props.selected === item.URL} onClick={() => {props.setSelected(item.URL)}} /></>
                 })}
            
                

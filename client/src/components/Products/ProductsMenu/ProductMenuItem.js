@@ -8,9 +8,10 @@ export default function ProductMenuItem(props) {
        <>
             <Link to={props.URL}>
                 <div className="product-menu-item-container" onClick={props.onClick}>
-                    <div className="product-menu-product-description">
+                    <div className={`product-menu-product-description${props.selected?"-selected":""}`}>
                         <strong>{props.description}</strong>
-                <hr />
+                    {props.selected?<hr />:""}
+                   
                     </div>
                     <div>
                             <div className={`product-image-outer-cirlce${props.selected?"-selected":""}`}>

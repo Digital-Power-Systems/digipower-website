@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import contact from '../../assets/SVGs/contact_us.svg';
+import axios from 'axios';
 
 
 import './ContactUs.css';
@@ -35,7 +36,19 @@ export default function ContactUs() {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("A value was submitted", e.target[0].value);
+        axios({
+            method: 'post',
+            url: 'http://localhost:8080/',
+            data: {
+                name: userDetails.name,
+                email: userDetails.email,
+                contact: userDetails.mob,
+                message: userDetails.message
+            }
+        })
+        .then( (res) => console.log(res))
+        .catch( (err) => console.log("Encoutered the following error", err))
+     
     }
     return (
         <div className="contact">
