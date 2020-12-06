@@ -81,7 +81,7 @@ export default function ContactUs() {
                     <h5>Queries or remarks</h5>
                     <textarea className="comment"  placeholder="Message"  value={userDetails.message} onChange={(e) => handleChange(e, "message")}></textarea>
                     <hr />
-                    <input type="submit" />
+                    <button type="submit">Submit</button>
                </form>
             </div>
              
