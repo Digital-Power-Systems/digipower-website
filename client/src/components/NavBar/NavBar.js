@@ -23,12 +23,12 @@ export default function NavBar() {
   return (
       <>
      
-        <nav className={`navbar${width<545?"-mobile":""}`}>
+        <nav className={`navbar${width<546?"-mobile":""}`}>
            
                 <div className="navbar-logo-container">
                   <Link to="/"><img src={DigiPowerLogo}  className="navbar-logo" /></Link>
                 </div>
-               <div className={`navbar-items${width<545?"-mobile":""}${width<545&&isToggle?"-active":""}`}>
+               <div className={`navbar-items${width<546?"-mobile":""}${width<546&&isToggle?"-active":""}`}>
                 <ul>
                   <li onClick={() => setisToggle((prevStateisToggle => !prevStateisToggle  ))}><Link to="/services">Products</Link></li>
                   <li onClick={() => setisToggle((prevStateisToggle => !prevStateisToggle  ))}><Link to="/about">About</Link></li>
