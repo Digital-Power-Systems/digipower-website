@@ -5,16 +5,18 @@ width: 100%;
 height: 100%;
 position: relative;
 border-radius: 0rem 1rem 2 rem 3 rem;
+
+
 }
 .hero-image  {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/Solar/SolarPanelGrid.jpg");
-    
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/Solar/SolarPanelGrid.jpg");
+  
     /* Set a specific height */
+    
     height: 100%;
     padding-top: 15rem;
-    padding-bottom: 10rem ;
+    padding-bottom: 18rem ;
     /* Position and center the image to scale nicely on all screens */
     background-attachment: fixed;
     background-position: center;
@@ -39,10 +41,12 @@ border-radius: 0rem 1rem 2 rem 3 rem;
   } /*End of Zoom in Keyframes */
    */
   h1{
-    color: white; 
+    
+    color: rgb(0, 0, 0); 
   }
   /* Place text in the middle of the image */
   .hero-text {
+   
     font-family: 'Playfair Display', serif;
     text-align: center;
     position: relative;
@@ -50,4 +54,71 @@ border-radius: 0rem 1rem 2 rem 3 rem;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+  }
+  .header-icons-container{
+    position: absolute;
+  
+    transform: skewY(3deg);
+    background-color: rgb(226, 226, 226);
+    width: 100%;
+    height: 8%;
+    top: 35rem;
+    
+
+  }
+ 
+  .header-icons-right{
+    position: absolute;
+    margin: auto;
+    transform: skewY(-3deg);
+    top: -8rem;
+    right: 0;
+    left: 0;
+    width: 30rem;
+  }
+
+
+  @media screen and (max-width: 800px){
+    .hero-image-container  {
+      height: 80%;
+     
+    }
+    .header-icons-container{
+      height: 5%;
+      top: 35rem;
+    }
+
+    .header-icons-right{
+      top: -5rem;
+      width: 25rem;
+    } 
+  }
+
+  @media screen and (max-width: 500px){
+    .hero-image-container  {
+      height: 10%;
+     
+    }
+    .header-icons-container{
+      
+      height: 2%;
+      top: 40rem;
+    }
+
+    .header-icons-right{
+
+      width: 20rem;
+    } 
+  }
+
+  @media screen and (max-width: 330px){
+    .header-icons-container{
+      height: 2%;
+      top: 40rem;
+    }
+
+    .header-icons-right{
+      top: -5rem;
+      width: 15rem;
+    } 
   }

@@ -1,10 +1,14 @@
 .product-overview-list-container{
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(4, auto);
     padding-top: 1%;
+    
+    
    
 }
-
+.product-overview-header{
+    margin-top: 4rem;
+}
 @media screen and (max-width: 1250px){
     .product-overview-list-container{
         grid-template-columns: repeat(3, auto);
