@@ -2,31 +2,31 @@
     display: grid;
     grid-template-columns: repeat(6, auto);
     padding-top: 1%;
-    background-color: rgb(85, 85, 85);
+    background-color:  #85afec;
   
     
     
    
 }
-.product-overview-header{
+.product-overview-mainheader{
     margin-top: 6rem;
     background-color: rgb(255, 255, 255);
-  
+   
     padding: 2rem;
 }
-@media screen and (max-width: 1250px){
+@media screen and (max-width: 1590px){
     .product-overview-list-container{
         grid-template-columns: repeat(3, auto);
     }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
     .product-overview-list-container{
         grid-template-columns: repeat(2, auto);
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 650px){
     .product-overview-list-container{
         grid-template-columns: repeat(1, auto);
     }

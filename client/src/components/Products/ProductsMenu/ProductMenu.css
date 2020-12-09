@@ -28,6 +28,9 @@ a{
     
     margin: 0rem 1rem  0rem  1rem;
 }
+.product-menu-item-container:hover{
+transform: scale(1.1, 1.1);
+}
 .product-menu-item-container-selected{
    
     padding: 1rem 2.8rem  1rem  2.8rem;

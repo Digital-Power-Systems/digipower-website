@@ -1,13 +1,14 @@
 .product-overview-card-container{
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 2rem;
+   border-radius: 1rem;
     text-align: center;
     padding: 2rem;
-    border: 0.2rem solid black;
- 
+    border: 0.2rem solid #4482DF;
+    box-shadow: 10px 30px #1e4faa;
 }
 .product-overview-image{
     width: 4rem;
@@ -16,4 +17,22 @@
 .product-overview-description{
     text-align: justify;
     text-justify: auto;
+}
+.product-overview-btn{
+    margin-top: 2rem;
+    border:  #85afec 0.2rem solid;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+.product-overview-card-container:hover{
+    transform: scale(1.1, 1.1);
+}
+.product-overview-btn:hover{
+    background-color: #4482DF;
+    border:  #85afec 0.2rem solid;
+    color: white;
+}
+.product-overview-card-container >hr{
+    color: black;
 }
