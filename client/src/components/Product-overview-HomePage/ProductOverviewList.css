@@ -1,13 +1,18 @@
 .product-overview-list-container{
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(6, auto);
     padding-top: 1%;
+    background-color: rgb(172, 190, 235);
+    transform: skewY(2deg);
     
     
    
 }
 .product-overview-header{
     margin-top: 4rem;
+    background-color: rgb(172, 190, 235);
+    transform: skewY(-2deg);
+    padding: 2rem;
 }
 @media screen and (max-width: 1250px){
     .product-overview-list-container{

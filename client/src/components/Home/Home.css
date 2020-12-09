@@ -59,11 +59,11 @@ border-radius: 0rem 1rem 2 rem 3 rem;
     position: absolute;
   
     transform: skewY(3deg);
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(172, 190, 235);
     width: 100%;
     height: 8%;
     top: 35rem;
-    
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(255, 227, 71)) */
 
   }
  

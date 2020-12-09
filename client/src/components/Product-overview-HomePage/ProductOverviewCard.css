@@ -1,5 +1,5 @@
 .product-overview-card-container{
-    background-color: rgb(118, 170, 248);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,6 +7,7 @@
     text-align: center;
     padding: 2rem;
     border: 0.2rem solid black;
+    transform: skewY(-2deg);
 }
 .product-overview-image{
     width: 4rem;
