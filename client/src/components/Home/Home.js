@@ -17,8 +17,9 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-                        <div className="header-icons-container"> <img className="header-icons-right"src={town} alt="contact us"/></div>
-           
+                        <div className="header-icons-container-left"> </div>
+                        <div className="header-icons-container-right">  <img className="header-icons-right"src={town} alt="contact us"/> </div>
+                          
        </>
     )
 }

@@ -16,7 +16,7 @@ border-radius: 0rem 1rem 2 rem 3 rem;
     
     height: 100%;
     padding-top: 15rem;
-    padding-bottom: 18rem ;
+    padding-bottom: 20rem ;
     /* Position and center the image to scale nicely on all screens */
     background-attachment: fixed;
     background-position: center;
@@ -55,13 +55,24 @@ border-radius: 0rem 1rem 2 rem 3 rem;
     transform: translate(-50%, -50%);
     color: white;
   }
-  .header-icons-container{
+  .header-icons-container-right{
     position: absolute;
   
-    transform: skewY(3deg);
-    background-color: rgb(172, 190, 235);
+    transform: skewY(5deg);
+    background-color:#4482DF;;
     width: 100%;
-    height: 8%;
+    height: 9.5%;
+    top: 35rem;
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(255, 227, 71)) */
+
+  }
+  .header-icons-container-left{
+    position: absolute;
+  
+    transform: skewY(-5deg);
+    background-color: #6599e6;
+    width: 100%;
+    height: 9.5%;
     top: 35rem;
     /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(255, 227, 71)) */
 
@@ -70,11 +81,16 @@ border-radius: 0rem 1rem 2 rem 3 rem;
   .header-icons-right{
     position: absolute;
     margin: auto;
-    transform: skewY(-3deg);
-    top: -8rem;
+    transform: skewY(-5deg);
+    background-color: rgb(221, 239, 250);
+    border-radius: 50%;
+    
+    top: -15rem;
     right: 0;
     left: 0;
-    width: 30rem;
+    width: 25rem;
+    height: 25rem;
+    box-shadow: 0px 30px #08204b;
   }
 
 
@@ -83,14 +99,18 @@ border-radius: 0rem 1rem 2 rem 3 rem;
       height: 80%;
      
     }
-    .header-icons-container{
+    .header-icons-container-right{
       height: 5%;
       top: 35rem;
     }
-
+    .header-icons-container-left{
+      height: 5%;
+      top: 35rem;
+    }
     .header-icons-right{
-      top: -5rem;
-      width: 25rem;
+      top: -15rem;
+      width: 21rem;
+      height: 21rem;
     } 
   }
 
@@ -99,15 +119,20 @@ border-radius: 0rem 1rem 2 rem 3 rem;
       height: 10%;
      
     }
-    .header-icons-container{
+    .header-icons-container-left{
       
-      height: 2%;
+      height: 3%;
       top: 40rem;
     }
-
+    .header-icons-container-right{
+      
+      height: 3%;
+      top: 40rem;
+    }
     .header-icons-right{
 
-      width: 20rem;
+      width: 18rem;
+      height: 18rem;
     } 
   }
 
@@ -120,5 +145,6 @@ border-radius: 0rem 1rem 2 rem 3 rem;
     .header-icons-right{
       top: -5rem;
       width: 15rem;
+      height: 15rem;
     } 
   }
