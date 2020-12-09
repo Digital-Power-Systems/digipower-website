@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect} from 'react';
 
 import cctv from '../../../assets/SVGs/cctv.svg';
 import solar from '../../../assets/SVGs/solar-energy.svg';
@@ -12,7 +12,15 @@ import './ProductMenu.css';
 import ProductMenuItem from './ProductMenuItem';
 export default function ProductMenu(props) {
   
- 
+    useEffect(() => {
+        window.scroll({
+            top: 170, 
+            left: 0, 
+            behavior: 'smooth'
+          });
+        
+    }, [props.selected]); 
+    // Scroll to position (Top)  on selectiong new element
     const menu = [{id: 1, description: "Inverters", URL: "?selected=inverter", img: inverter },
                     {id: 2, description: "Online UPS", URL: "?selected=onlineups", img: ups },
                     {id: 3, description: "Home UPS", URL: "?selected=ups", img: ups },
