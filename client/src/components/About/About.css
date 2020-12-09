@@ -42,7 +42,7 @@
 }
 .partner-list{
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(5, auto);
     text-align: center;
     
 }

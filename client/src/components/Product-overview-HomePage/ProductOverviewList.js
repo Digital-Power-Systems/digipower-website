@@ -15,6 +15,7 @@ export default function ProductOverviewList() {
     return (
        <>
                 <h1  className="product-overview-mainheader"> Our Power Products</h1>
+                <hr />
             <div className="product-overview-list-container">
                 <ProductOverviewCard img={inverter} header="Inverters" description="Power backup to keep the vibe on with world-class inverters." URL="/services?selected=inverter"/>
                 <ProductOverviewCard img={ups} header="Online UPS" description="Focus on work and keep the power going with home UPS" URL="/services?selected=onlineups"/>

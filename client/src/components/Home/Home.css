@@ -55,7 +55,7 @@ border-radius: 0rem 1rem 2 rem 3 rem;
     transform: translate(-50%, -50%);
     color: white;
   }
-  .header-icons-container-right{
+  .ribbon-right{
     position: absolute;
   
     transform: skewY(5deg);
@@ -66,7 +66,7 @@ border-radius: 0rem 1rem 2 rem 3 rem;
     /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(255, 227, 71)) */
 
   }
-  .header-icons-container-left{
+  .ribbon-left{
     position: absolute;
   
     transform: skewY(-5deg);
@@ -99,11 +99,11 @@ border-radius: 0rem 1rem 2 rem 3 rem;
       height: 80%;
      
     }
-    .header-icons-container-right{
+    .ribbon-right{
       height: 6%;
       top: 35rem;
     }
-    .header-icons-container-left{
+    .ribbon-left{
       height: 6%;
       top: 35rem;
     }
@@ -119,12 +119,12 @@ border-radius: 0rem 1rem 2 rem 3 rem;
       height: 10%;
      
     }
-    .header-icons-container-left{
+    .ribbon-left{
       
       height: 3%;
       top: 40rem;
     }
-    .header-icons-container-right{
+    .ribbon-right{
       
       height: 3%;
       top: 40rem;
