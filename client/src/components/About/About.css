@@ -99,10 +99,15 @@
 } */
 
 @media screen and (max-width: 950px){
-
     .branch-list{
         grid-template-columns: repeat(2, auto);
     }
+    .partner-list{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        text-align: center;
+        
+                }
     .branch-address{
         margin: 3%;
       width: 80%;
@@ -112,7 +117,12 @@
 
 
 @media screen and (max-width: 800px){
-  
+    .partner-list{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        text-align: center;
+        
+                }
     .mission-card{
        
         width: 35%;
@@ -121,6 +131,12 @@
 }
 
 @media screen and (max-width: 600px){
+    .partner-list{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        text-align: center;
+        
+    }
     .mission-card{
        
         width: 75%;
@@ -137,12 +153,7 @@
 }
 
 @media screen and (max-width: 400px){
-    .partner-list{
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        text-align: center;
-        
-    }
+ 
     .mission-card{
        
         width: 100%;
@@ -154,3 +165,4 @@
         
     }
 }
+
