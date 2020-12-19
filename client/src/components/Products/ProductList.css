@@ -1,0 +1,10 @@
+.product-list-container{
+    width: 90%;
+    padding: 2rem;
+    text-align: justify;
+     text-justify: inter-word; 
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

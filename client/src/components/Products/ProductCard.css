@@ -1,0 +1,29 @@
+.product-card-container{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border: .2rem solid black;
+    margin: 1rem;
+    text-align: left;
+    font-size: 1.2rem;
+    
+}
+.product-card-image{
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  
+  
+      
+}
+.product-card-image img{
+    height: 14rem;
+    width: 14rem;
+   
+}
+.product-card-title:hover{
+    color: #85afec ;
+}

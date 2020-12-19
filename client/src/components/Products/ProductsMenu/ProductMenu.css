@@ -10,9 +10,7 @@
     justify-content: space-evenly;
     text-align: justify;
     text-justify: inter-word;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 6rem;
+  
    
 }
 a{

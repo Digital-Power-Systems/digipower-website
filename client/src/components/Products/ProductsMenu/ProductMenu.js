@@ -14,7 +14,7 @@ export default function ProductMenu(props) {
   
     useEffect(() => {
         window.scroll({
-            top: 170, 
+            top: 150, 
             left: 0, 
             behavior: 'smooth'
           });
