@@ -6,21 +6,24 @@ import {Link} from 'react-router-dom';
 export default function ProductMenuItem(props) {
     return (
        <>
+
+        <div className={`product-menu-item-container${props.selected?"-selected":""}`} onClick={props.onClick}>
             <Link to={props.URL}>
-                <div className="product-menu-item-container" onClick={props.onClick}>
-                    <div className="product-menu-product-description">
+                    <div className={`product-menu-product-description${props.selected?"-selected":""}`}>
                         <strong>{props.description}</strong>
-                <hr />
+                    {props.selected?<hr />:""}
+                   
                     </div>
                     <div>
-                            <div className={`product-image-outer-cirlce${props.selected?"-selected":""}`}>
+                         
                                 <div className={`product-image-container${props.selected?"-selected":""}`}>
                                     <img className="product-image" src={props.img} alt="inverter-icon" />
                                 </div>
-                            </div>
+                          
                     </div>
-                </div>
             </Link>
+                </div>
+
       </>  
     )
 }

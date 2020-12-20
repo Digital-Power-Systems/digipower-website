@@ -42,7 +42,9 @@
 }
 .partner-list{
     display: grid;
-    grid-template-columns: repeat(3, auto);
+
+    grid-template-columns: repeat(5, auto);
+
     text-align: center;
     
 }
@@ -61,7 +63,10 @@
     grid-template-columns: repeat(4, auto);
     padding-bottom: 8rem;
     padding-top: 8rem;
-   
+    padding-left: 2rem;
+    padding-right: 2rem;
+   margin: auto;
+
     background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../../assets/SVGs/branch_locations.svg");
     background-attachment: fixed;
     background-position: center;
@@ -72,7 +77,8 @@
 }
 .branch-address{
     min-width: 50%;
-    max-width: 70%;
+    max-width: 100%;
+
     border-radius: 20%;
     background: rgba(0, 1, 3, 0.7);
     margin: 2%;
@@ -98,11 +104,20 @@
     }
 } */
 
-@media screen and (max-width: 950px){
-
+@media screen and (max-width: 1400px){
     .branch-list{
         grid-template-columns: repeat(2, auto);
     }
+}
+@media screen and (max-width: 950px){
+
+    .partner-list{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        text-align: center;
+        
+                }
+
     .branch-address{
         margin: 3%;
       width: 80%;
@@ -112,7 +127,14 @@
 
 
 @media screen and (max-width: 800px){
-  
+
+    .partner-list{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        text-align: center;
+        
+                }
+
     .mission-card{
        
         width: 35%;
@@ -120,37 +142,54 @@
     }
 }
 
-@media screen and (max-width: 600px){
-    .mission-card{
-       
-        width: 75%;
-    
-    }
+
+@media screen and (max-width: 780px){
     .branch-list{
         grid-template-columns: repeat(1, auto);
-    }
-    .branch-address{
-        margin: 1%;
-      width: 80%;
-        
+       padding: 2rem;
     }
 }
-
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
     .partner-list{
         display: grid;
         grid-template-columns: repeat(2, auto);
         text-align: center;
         
     }
+
+    .mission-card{
+       
+        width: 75%;
+    
+    }
+
+   
+    .branch-address{
+        margin: 1%;
+      width: 70%;
+
+        
+    }
+}
+
+@media screen and (max-width: 400px){
+
+ 
+
     .mission-card{
        
         width: 100%;
     
     }
+    .branch-list{
+     padding: .2rem;
+     
+    }
     .branch-address{
       
-      width: 100%;
+      width: 90%;
         
     }
 }
+
+

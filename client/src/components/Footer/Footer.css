@@ -8,13 +8,19 @@ footer{
     width: 100%;
     left: 0px;
     bottom: 0px;
-    background-color: rgb(219, 223, 243);
+    background-color: #85afec ;
     padding: 2%;
     font-size: 0.9rem;
 }
 .logo{
+
+    margin-top: 2rem;
     width: 10rem;
-    height: 10rem;
+    height: 5rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding-left: .9rem;
+
 }
 ul{
     list-style: none;
@@ -75,7 +81,7 @@ ul{
     }
     .logo{
         width: 10rem;
-        height: 10rem;
+        height: 5rem;
     }
     .location-map{
         width: 8rem;
@@ -85,7 +91,7 @@ ul{
 }
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 790px){
     footer{
         display: grid;
         grid-template-columns: repeat(1, auto);

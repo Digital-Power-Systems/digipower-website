@@ -1,0 +1,19 @@
+.product-list-container{
+    width: 90%;
+    padding: 1rem;
+    text-align: justify;
+    text-justify: inter-word; 
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+@media screen and (max-width: 545px){
+    .product-list-container{
+        padding: 0rem;
+        margin: 0%;
+        width: 100%;
+    }
+}

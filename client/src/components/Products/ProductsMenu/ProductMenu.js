@@ -1,4 +1,6 @@
-import React, {useState} from 'react';
+
+import React, {useEffect} from 'react';
+
 
 import cctv from '../../../assets/SVGs/cctv.svg';
 import solar from '../../../assets/SVGs/solar-energy.svg';
@@ -11,19 +13,31 @@ import {useParams} from 'react-router-dom';
 import './ProductMenu.css';
 import ProductMenuItem from './ProductMenuItem';
 export default function ProductMenu(props) {
-  
- 
-    const menu = [{id: 1, description: "Inverter", URL: "?selected=inverter", img: inverter },
-                    {id: 2, description: "Online/Offline UPS", URL: "?selected=ups", img: ups },
-                    {id: 3,  description: "Solar products", URL: "?selected=solar", img: solar },
-                    {id: 4, description: "Batteries", URL: "?selected=battery", img: battery },
-                    {id: 5, description: "Security Cameras", URL: "?selected=cctv", img: cctv }
+
+    useEffect(() => {
+        window.scroll({
+            top: 125, 
+            left: 0, 
+            behavior: 'smooth'
+          });
+        
+    }, [props.selected]); 
+    // Scroll to position (Top)  on selectiong new element
+    const menu = [{id: 1, description: "Inverters", URL: "?selected=inverter", img: inverter },
+                    {id: 2, description: "Online UPS", URL: "?selected=onlineups", img: ups },
+                    {id: 3, description: "Home UPS", URL: "?selected=ups", img: ups },
+                    {id: 4,  description: "Solar", URL: "?selected=solar", img: solar },
+                    {id: 5, description: "Batteries \n", URL: "?selected=battery", img: battery },
+                    {id: 6, description: "CCTV ", URL: "?selected=cctv", img: cctv }
+
                 ];
              
     return (
         <div className="product-menu-container">
                 {menu.map((item) => {
-                    return <ProductMenuItem  description={item.description} URL={item.URL} img={item.img} selected={props.selected === item.URL} onClick={() => {props.setSelected(item.URL)}} />
+
+                    return <><ProductMenuItem  key={item.id} description={item.description} URL={item.URL} img={item.img} selected={props.selected === item.URL} onClick={() => {props.setSelected(item.URL)}} /></>
+
                 })}
            
                

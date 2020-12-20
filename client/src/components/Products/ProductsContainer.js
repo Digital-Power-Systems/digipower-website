@@ -27,8 +27,11 @@ class ProductsContainer extends Component {
             <div className="product-container">
 
                 <h1>Our Products</h1>
+
+                <h3>Pick a category</h3>
                 <ProductMenu location={this.props.location} selected={this.props.selected} setSelected={this.props.setSelected}/>
-                <ProductList location={this.props.location} />
+                <ProductList location={this.props.location} selected={this.props.selected} />
+
 
 
             </div>
