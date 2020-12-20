@@ -10,6 +10,8 @@ import livfastBattery from '../../assets/Battery/livfast-battery.jpeg';
 import livguardBattery from '../../assets/Battery/livguard-battery.jpg';
 import livfastInverter from '../../assets/Inverter/livfast-inverter.jpg';
 import livguardInverter from '../../assets/Inverter/livguard-inverter.jpg';
+import digipowerInverter from '../../assets/Inverter/digipower-inverter.jpg';
+import sonyCCTV from '../../assets/CCTV/sony-cctv.jpg';
 
 import ProductCard from './ProductCard';
 
@@ -25,8 +27,11 @@ export default function ProductList(props) {
     {id: 6, type: "battery", title: "Micro Battery", company: "Micro", price:"Rs. 3,000", description: "Charge up with batteries from Micro",  img: microBattery},
     {id: 7, type: "battery", title: "LivFast Battery", company: "LivFast", price:"Rs. 3,000", description: "Charge up with batteries from LivFast",  img: livfastBattery},
     {id: 8, type: "battery", title: "LivGuard Battery", company: "LivGuard", price:"Rs. 3,000", description: "Charge up with batteries from LivGuard",  img: livguardBattery},
-    {id: 9, type: "inverter", title: "LivFast Inverter", company: "LivFast", price:"Rs. 45,000", description: "Keep the power going with LivFast inverters",  img: livfastInverter},
-    {id: 10, type: "inverter", title: "LivGuard Inverter", company: "LivGuard", price:"Rs. 55,000", description: "Keep the power going with LivGuard inverters",  img: livguardInverter}]
+    {id: 9, type: "inverter", title: "DigiPower Inverter", company: "DigiPower", price:"Rs. 55,000", description: "Keep the power going with our very own inverters",  img: digipowerInverter},
+    {id: 10, type: "inverter", title: "LivFast Inverter", company: "LivFast", price:"Rs. 45,000", description: "Keep the power going with LivFast inverters",  img: livfastInverter},
+    {id: 11, type: "inverter", title: "LivGuard Inverter", company: "LivGuard", price:"Rs. 55,000", description: "Keep the power going with LivGuard inverters",  img: livguardInverter},
+    {id: 12, type: "cctv", title: "Sony CCTV Camera", company: "Sony", price:"Rs. 55,000", description: "Watchful eyes around with premium CCTV cameras from Sony",  img: sonyCCTV}]
+    
     return (
         <>
 
