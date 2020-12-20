@@ -42,9 +42,11 @@ export default function NavBar() {
                 </div>
                <div className={`navbar-items${width<546?"-mobile":""}${width<546&&isToggle?"-active":""}`}>
                 <ul>
+
                   <li onClick={() => {setisToggle((prevStateisToggle => !prevStateisToggle  )); setSelected("products")}}><Link to="/services">Products</Link></li>
                   <li onClick={() => {setisToggle((prevStateisToggle => !prevStateisToggle  )); setSelected("about")}}><Link to="/about">About</Link></li>
                   <li onClick={() => {setisToggle((prevStateisToggle => !prevStateisToggle  )); setSelected("contact")}}> <Link to="/contact">Contact us</Link></li>
+
                   
                 </ul>
                </div>

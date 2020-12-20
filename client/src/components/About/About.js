@@ -24,13 +24,17 @@ export default function About() {
                         <div className="mission-card">Industry standard products</div>
                         <div className="mission-card"> Dealerships with industry leader brands.</div>
                         <div className="mission-card"> Operations in Kerala </div>
+
                         <div className="mission-card"> Fair prices </div>
                         <div className="mission-card">Top-notch service</div>
+
                     </div>
               
                 </div>
                     <hr />
+
               
+
                
                 <h1>Our Branches</h1>
                 <div className="branch-list">
@@ -90,7 +94,9 @@ export default function About() {
                         </span> 
                     </div>  */}
                 </div>
+
                 <Partners />
+
             </div>
        </>
     )

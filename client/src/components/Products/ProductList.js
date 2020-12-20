@@ -1,3 +1,4 @@
+
 import React, {useState} from 'react';
 
 import solarLight from '../../assets/Solar/solar-light-1.jpg';
@@ -42,5 +43,6 @@ export default function ProductList(props) {
 
         </div>
         </>
+
     )
 }

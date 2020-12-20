@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom';
 export default function ProductMenuItem(props) {
     return (
        <>
+
         <div className={`product-menu-item-container${props.selected?"-selected":""}`} onClick={props.onClick}>
             <Link to={props.URL}>
                     <div className={`product-menu-product-description${props.selected?"-selected":""}`}>
@@ -22,6 +23,7 @@ export default function ProductMenuItem(props) {
                     </div>
             </Link>
                 </div>
+
       </>  
     )
 }

@@ -1,5 +1,6 @@
 .product-overview-list-container{
     display: grid;
+
     grid-template-columns: repeat(6, auto);
     padding-top: 1%;
     background-color:  #85afec;
@@ -15,24 +16,29 @@
     padding: 2rem;
 }
 @media screen and (max-width: 1590px){
+
     .product-overview-list-container{
         grid-template-columns: repeat(3, auto);
     }
 }
 
+
 @media screen and (max-width: 1000px){
     .product-overview-mainheader{
         margin-top: 10rem; 
     }
+
     .product-overview-list-container{
         grid-template-columns: repeat(2, auto);
     }
 }
 
+
 @media screen and (max-width: 650px){
     .product-overview-mainheader{
         margin-top: 3rem; 
     }
+
     .product-overview-list-container{
         grid-template-columns: repeat(1, auto);
     }
