@@ -35,6 +35,7 @@
 @media screen and (max-width: 1000px){
     .product-card-container{
         font-size: 1rem;
+        border: .1rem solid black;
     }
     .product-card-image img{
         height: 10rem;
@@ -46,6 +47,7 @@
 @media screen and (max-width: 785px){
     .product-card-container{
         font-size: .8rem;
+        border: .05rem solid black;
     }
     .product-card-image img{
         height: 7rem;
