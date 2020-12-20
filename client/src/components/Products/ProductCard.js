@@ -7,8 +7,8 @@ export default function ProductCard({details}) {
             <div className="product-card-image"> 
                 <img src={details.img} alt="product image" />
             </div>
-           <div>
-            <h3 className="product-card-title">{details.title}</h3>
+           <div className="product-card-info">
+                <h3 className="product-card-title">{details.title}</h3>
                 <div style={{color: "gray"}}> {details.company}</div>
                 <div><strong>{details.price}</strong></div>
                 <div className="product-card-description">{details.description}</div>
