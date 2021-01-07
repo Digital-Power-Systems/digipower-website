@@ -23,7 +23,7 @@ a{
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    
+    text-align: center  ;
     margin: 0rem 1rem  0rem  1rem;
 }
 .product-menu-item-container:hover{
@@ -35,6 +35,7 @@ transform: scale(1.1, 1.1);
     border: .4rem solid rgb(252, 236, 96);
     border-radius: 50%;
     margin: 0rem 2rem  0rem  1rem;
+    text-align: center  ;
    
 }
 .product-menu-product-description{

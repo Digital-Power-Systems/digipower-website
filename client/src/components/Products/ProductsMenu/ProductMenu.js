@@ -26,7 +26,7 @@ export default function ProductMenu(props) {
                     {id: 3, description: "Home UPS", URL: "?selected=ups", img: ups },
                     {id: 4,  description: "Solar", URL: "?selected=solar", img: solar },
                     {id: 5, description: "Batteries \n", URL: "?selected=battery", img: battery },
-                    {id: 6, description: "CCTV ", URL: "?selected=cctv", img: cctv }
+                    {id: 6, description: "CCTV", URL: "?selected=cctv", img: cctv }
                 ];
              
     return (
