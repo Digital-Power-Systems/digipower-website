@@ -13,18 +13,23 @@ import ProductsContainer from './components/Products/ProductsContainer';
 
 import { Provider } from 'react-redux';
 import store  from './redux/store/store'
+
 import Partners from './components/About/Partners';
+
 
 function App() {
   return (
     // Adding redux provider here
     <Provider store={store}>  
       <div className="App">
+
         <Router >
+
 
           <NavBar />
 
           <Switch>
+
             <Route path="/" exact render={() => window.scrollTo({
         top: 0,
         behavior: "smooth"
@@ -49,6 +54,7 @@ function App() {
         top: 0,
         behavior: "smooth"
     })} >
+
               <ContactUs />
             </Route>
           </Switch>

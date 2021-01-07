@@ -19,6 +19,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
+
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('./client/build'));
 
@@ -62,6 +63,7 @@ else{
    
 });
 }
+
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`)
 })

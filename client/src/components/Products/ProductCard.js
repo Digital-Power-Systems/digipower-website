@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './ProductCard.css';
 
@@ -13,6 +14,7 @@ export default function ProductCard({details}) {
                 <div><strong>{details.price}</strong></div>
                 <div className="product-card-description">{details.description}</div>
            </div>
+
         </div>
     )
 }

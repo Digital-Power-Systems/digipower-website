@@ -1,4 +1,6 @@
+
 import React, {useEffect} from 'react';
+
 
 import cctv from '../../../assets/SVGs/cctv.svg';
 import solar from '../../../assets/SVGs/solar-energy.svg';
@@ -11,7 +13,7 @@ import {useParams} from 'react-router-dom';
 import './ProductMenu.css';
 import ProductMenuItem from './ProductMenuItem';
 export default function ProductMenu(props) {
-  
+
     useEffect(() => {
         window.scroll({
             top: 125, 
@@ -32,7 +34,9 @@ export default function ProductMenu(props) {
     return (
         <div className="product-menu-container">
                 {menu.map((item) => {
+
                     return <><ProductMenuItem  key={item.id} description={item.description} URL={item.URL} img={item.img} selected={props.selected === item.URL} onClick={() => {props.setSelected(item.URL)}} /></>
+
                 })}
            
                

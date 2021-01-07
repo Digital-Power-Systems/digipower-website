@@ -14,6 +14,7 @@ import ProductOverviewCard from './ProductOverviewCard';
 export default function ProductOverviewList() {
     return (
        <>
+
                 <h1  className="product-overview-mainheader"> Our Power Products</h1>
                 <hr />
             <div className="product-overview-list-container">
@@ -21,6 +22,7 @@ export default function ProductOverviewList() {
                 <ProductOverviewCard img={ups} header="Online UPS" description="Focus on work and keep the power going with home UPS" URL="/services?selected=onlineups"/>
                 <ProductOverviewCard img={ups} header="Home UPS" description="World-Class online UPS with power when you need it" URL="/services?selected=ups"/>
                 <ProductOverviewCard img={solar} header="Solar products" description="Harness the power of the sun, protect nature and keep the bills light." URL="/services?selected=solar"/>
+
                 <ProductOverviewCard img={battery} header="Batteries" description="The best batteries around for all your needs" URL="/services?selected=battery"/>
                 <ProductOverviewCard img={cctv} header="Surveilence cameras" description="Level up the security with  watchful eyes around." URL="/services?selected=cctv"/>
               
