@@ -14,18 +14,16 @@ class ProductsContainer extends Component {
     constructor(props) {
         super(props);
         this.state = { selected: "" };
-        this.setSelected = this.setSelected.bind(this);
+     
     }
-    setSelected(choice) {
-
-    }
+   
     componentDidMount() {
         console.log(this.props.location);
     }
     render() {
         return (
             <div className="product-container">
-
+                {console.log(this.props)}
                 <h1>Our Products</h1>
 
                 <h3>Pick a category</h3>

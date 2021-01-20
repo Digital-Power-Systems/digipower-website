@@ -24,7 +24,7 @@ export default function Home() {
                     <div className="hero-text">
                         <h1>(Em)Powering homes & enterprises,</h1>
                         <h3>with industry standard power solutions</h3>
-
+                       
                     </div>
                 </div>
             </div>

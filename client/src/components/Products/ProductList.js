@@ -1,5 +1,7 @@
 
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
+
+
 
 import solarLight from '../../assets/Solar/solar-light-1.jpg';
 import solarInverter from '../../assets/Solar/solar-inverter-UTL.jpg';
@@ -13,34 +15,47 @@ import livfastInverter from '../../assets/Inverter/livfast-inverter.jpg';
 import livguardInverter from '../../assets/Inverter/livguard-inverter.jpg';
 import digipowerInverter from '../../assets/Inverter/digipower-inverter.jpg';
 import sonyCCTV from '../../assets/CCTV/sony-cctv.jpg';
+import outOfStock from '../../assets/SVGs/out_of_stock.svg';
 
 import ProductCard from './ProductCard';
+import Button from '../Button';
 
 
 import './ProductList.css';
 
 export default function ProductList(props) {
-    const products = [{id: 1, type: "solar", title: "Solar indoor lamp", company: "WAREE", price:"Rs. 30,000", description: "Lighten up and save bills with the power of the sun. Premium solar lamps from WAREE, India's leading solar manufacturer",  img: solarLight},
-    {id: 2, type: "solar", title: "Solar inverter", company: "UTL Solar", price:"Rs. 30,000", description: "Lighten up and save bills with the power of the sun. Premium solar inverters from UTL Solar, India's leading solar manufacturer",  img: solarInverter},
-    {id: 3, type: "battery", title: "Amaron Battery", company: "Amaron", price:"Rs. 3,000", description: "Charge up with batteries from Amaron",  img: amaronBattery},
-    {id: 4, type: "battery", title: "Axon Battery", company: "Axon", price:"Rs. 3,000", description: "Charge up with batteries from Axon",  img: axonBattery},
-    {id: 5, type: "battery", title: "Exide Battery", company: "Exide", price:"Rs. 3,000", description: "Charge up with batteries from Exide",  img: exideBattery},
-    {id: 6, type: "battery", title: "Micro Battery", company: "Micro", price:"Rs. 3,000", description: "Charge up with batteries from Micro",  img: microBattery},
-    {id: 7, type: "battery", title: "LivFast Battery", company: "LivFast", price:"Rs. 3,000", description: "Charge up with batteries from LivFast",  img: livfastBattery},
-    {id: 8, type: "battery", title: "LivGuard Battery", company: "LivGuard", price:"Rs. 3,000", description: "Charge up with batteries from LivGuard",  img: livguardBattery},
-    {id: 9, type: "inverter", title: "DigiPower Inverter", company: "DigiPower", price:"Rs. 55,000", description: "Keep the power going with our very own inverters",  img: digipowerInverter},
-    {id: 10, type: "inverter", title: "LivFast Inverter", company: "LivFast", price:"Rs. 45,000", description: "Keep the power going with LivFast inverters",  img: livfastInverter},
-    {id: 11, type: "inverter", title: "LivGuard Inverter", company: "LivGuard", price:"Rs. 55,000", description: "Keep the power going with LivGuard inverters",  img: livguardInverter},
-    {id: 12, type: "cctv", title: "Sony CCTV Camera", company: "Sony", price:"Rs. 55,000", description: "Watchful eyes around with premium CCTV cameras from Sony",  img: sonyCCTV}]
-    
+   const [products, setProducts] = useState([]);
+   
+
+    useEffect(() => {
+        console.log("UseEffect RUN!!!");
+        fetch(" https://digital-power-systems.github.io/digipower_products.github.io/products.json")
+        .then((res) => {return res.json()})
+        .then((result) => { setProducts(result.products); console.log(result.products) });
+       
+    }, []);
+
     return (
         <>
 
         <div className="product-list-container">
-           
-
-            {products.map((item) => { if(props.selected.slice(10,)===item.type){return <ProductCard key={item.id} details={item} />}})}
-
+                {
+                    Object.keys(products).map((key) => {
+                        if(props.selected.slice(10,)===key){
+                            if(products[key].length==0){
+                                return <div style={{ "textAlign": "center" , "margin": "auto"}}>
+                                            <h3>Sorry, we're currently out of stock for {key.toUpperCase()}</h3>
+                                            <Button  action={"redirect"} url={"/contact"} text={"Get in touch"} />
+                                            <h5> But no worries, get in touch with us with your requirements, we're already on it.  :)</h5>
+                                            <img style={{"width": "60%" }}src={outOfStock} alt="out of stock"/>
+                                        </div>
+                            }
+                            else{
+                               return  products[key].map((item) => { return <ProductCard key={item.id} details={item} />})
+                            }
+                        }
+                    })
+                }
         </div>
         </>
 

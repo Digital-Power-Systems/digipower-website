@@ -19,8 +19,8 @@ export default function ProductOverviewList() {
                 <hr />
             <div className="product-overview-list-container">
                 <ProductOverviewCard img={inverter} header="Inverters" description="Power backup to keep the vibe on with world-class inverters." URL="/services?selected=inverter"/>
-                <ProductOverviewCard img={ups} header="Online UPS" description="Focus on work and keep the power going with home UPS" URL="/services?selected=onlineups"/>
-                <ProductOverviewCard img={ups} header="Home UPS" description="World-Class online UPS with power when you need it" URL="/services?selected=ups"/>
+                <ProductOverviewCard img={ups} header="Online UPS" description="Focus on work and keep the power going with home UPS" URL="/services?selected=onlineUPS"/>
+                <ProductOverviewCard img={ups} header="Home UPS" description="World-Class online UPS with power when you need it" URL="/services?selected=homeUPS"/>
                 <ProductOverviewCard img={solar} header="Solar products" description="Harness the power of the sun, protect nature and keep the bills light." URL="/services?selected=solar"/>
 
                 <ProductOverviewCard img={battery} header="Batteries" description="The best batteries around for all your needs" URL="/services?selected=battery"/>
