@@ -4,7 +4,7 @@ import insta from '../../assets/SVGs/instagram.svg';
 import mail from '../../assets/SVGs/email.svg'
 import phone from '../../assets/SVGs/phone.svg'
 import location from '../../assets/SVGs/location.svg'
-import DigiPowerLogo from  '../../logo.svg';
+import DigiPowerLogo from  '../../logo-dps.svg';
 import  './Footer.css';
 
 import { Link} from 'react-router-dom';

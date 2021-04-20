@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { Link} from 'react-router-dom';
-import DigiPowerLogo from  '../../logo.svg'
+import DigiPowerLogo from  '../../logo-dps.svg'
 import  './NavBar.css'
 
 
