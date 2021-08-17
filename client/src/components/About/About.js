@@ -19,7 +19,7 @@ export default function About() {
             <div className="about-container">
                 <div className="intro-list">
                     <h1>Our mission</h1>
-                    <span>  Digi Power operates with mission to bring quality power solutions to customers at affordable prices.</span>
+                    <span>  Digital Power Systems operates with mission to bring quality power solutions to customers at affordable prices.</span>
                     <div className="mission-list">
                         <div className="mission-card">Industry standard products</div>
                         <div className="mission-card"> Dealerships with industry leader brands.</div>
